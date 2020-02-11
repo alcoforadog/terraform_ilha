@@ -1,0 +1,17 @@
+variable "project" {
+  description = "The project name"
+}
+variable "aws_region" {
+  description = "The region to launch the bastion host"
+}
+variable "vpc_cidr" {
+  description = "The CIDR block of the vpc"
+}
+variable "public_subnets_cidr" {
+  type        = list
+  description = "The CIDR block for the public subnet"
+}
+variable "availability_zones" {
+  type        = list
+  description = "The az that the resources will be launched"
+}
